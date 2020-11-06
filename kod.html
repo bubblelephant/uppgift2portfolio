@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod Document</title>
+    <link rel="stylesheet" href="kod.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <div class="hero">
+    <div class="nav-bar">
+    <div class="nav-logo">
+        <img src="https://i.ibb.co/NKxt4mL/Front-End-Logo.png" alt="logo" width="80" height="80">
+    </div>
+    <div class="nav-links" id="nav-links">
+        <i class="fa fa-close" onclick="closeMenu()" ></i>
+            <ul>
+                <a href="#"><li> Link</li></a>
+                <a href="#"><li> Link</li></a>
+                <a href="#"><li> Link</li></a>
+            </ul>
+            <button type="button" class="btn">Sign Up</button>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+    </div>
+
+    <div class="banner-title">
+        <h1><span>Front End Utbildning:</span><br> HTML, CSS, JAVASCRIFT<br> och mycket mer.</h1>
+        <button type="button" class="btn"> Explore</button>
+    </div>
+    <div class="vertical-bar">
+        <div class="social-icons">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-pinterest" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+        <div class="search-icon">
+            <i class="fa fa-search"></i>
+        </div>
+    </div>
+    <div class="notifications">
+        <div class="contents"></div>
+        <div class="notification-img">
+            <img src="">
+        </div>
+    </div>
+    </div>
+<script>
+    var show = document.getElementById("nav-links");
+    function showMenu(){
+        show.style.right="0";
+    }
+    function closeMenu(){
+        show.style.right="-200px";
+    }
+</script>
+</body>
+</html>
